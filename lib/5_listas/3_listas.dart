@@ -52,7 +52,7 @@ void main() {
   print('\n');
 
   // gera uma lista de tamanho definido de alguma coisa repetidamente
-  final repeticoes = List.filled(10, 'Renan');
+  final repeticoes = List.filled(10, 'Nome que eu mandar');
   print(repeticoes);
   final repeticoes2 = List.filled(10, 2);
   print(repeticoes2);
@@ -77,7 +77,7 @@ void main() {
 
 
   // Collection if, caso uma condição seja satisfeita, incrementa um elemento na lista
-  var promocaoAtiva = true;
+  var promocaoAtiva = false;
   var produtos = [
     'Sanduiche',
     'Batata frita',
@@ -95,6 +95,6 @@ void main() {
   print(listaStrings);
 
   //separa os elementos da lista com elemento predefinido
-  var string = listaStrings.join(' --> ');
+  var string = listaStrings.join(' ! ');
   print(string);
 }
