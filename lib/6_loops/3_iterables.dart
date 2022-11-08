@@ -41,10 +41,10 @@ void main() {
   var nomes = ['Renan', 'Manu', 'Lobinha', 'Tigresa', 'Mateus'];
   final removerNomes = nomes
     .skipWhile((nome){
-      if(nome == 'Tigresa'){
-        return false;
+      if(nome != 'Tigresa'){
+        return true;
       } else {
-         return true; 
+         return false; 
 
       }
     })
