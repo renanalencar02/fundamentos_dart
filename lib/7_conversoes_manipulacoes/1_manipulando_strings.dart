@@ -71,10 +71,18 @@ void main() {
 
   ];
 
+  print(pacientes);
+
+  for (var paciente in pacientes) {
+    var dadosPaciente2 = paciente.split('|');
+    print(dadosPaciente2);
+  }
+
   for (var paciente in pacientes) {
     var dadosPaciente2 = paciente.split('|');
     print('Profissâo: ${dadosPaciente2[2]}');
   }
+    
 
   //percorre os dados individualmente, identifica o dado de nome e quebra ele com split usando o caractere de espaço
   //depois imprime o primeiro ou ultimo nome usando o last ou first.
